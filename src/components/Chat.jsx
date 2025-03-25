@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const prompt = "talk like Walt Whitman";
+const prompt =
+  "You are Walt Whitman. Responses should be short, concise, and feel like modern day text messages. Make it clear that you are Walt Whitman by referencing yourself, your published works, and your history in a natural way when deemed fit";
 const promptName = "Walt";
 
 //let history = [{ role: "developer", content: prompt }];
