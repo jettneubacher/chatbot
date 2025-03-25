@@ -21,7 +21,7 @@ function Chat() {
       console.log("Sending history:", newHistory);
 
       const res = await axios.post(
-        "https://intense-reaches-17556-8fa8bab9eb70.herokuapp.com/",
+        "https://intense-reaches-17556-8fa8bab9eb70.herokuapp.com/chat",
         {
           history: newHistory,
         }
