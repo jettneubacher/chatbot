@@ -1,0 +1,105 @@
+:root {
+  --f: Times;
+  --text: #cad2c5;
+  --primary: #52796f;
+  --light: #84a98c;
+  --dark: #354f52;
+  --bg: #2f3e46;
+}
+
+* {
+  background: var(--bg);
+  color: var(--text);
+  font: var(--f);
+}
+
+.header {
+  font: var(--f);
+  text-align: center;
+  padding: 0.5em;
+}
+
+.header .btn {
+  border-color: var(--dark);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 1rem;
+  margin-bottom: 0.3em;
+}
+
+.chat {
+  background: var(--bg);
+}
+
+
+.chatBox {
+  border: 3px ;
+  border-radius: 0.5em;
+  padding: 0.5em, 1.25em;
+  position: absolute;
+  right: 5%;
+  left: 5%;
+  top: 15%;
+  bottom: 15%;
+  background: var(--bg);
+  box-shadow: 0 0 0.25em 0.25em var(--text);
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.messages {
+  background-color: var(--bg);
+  padding: 0.5em 0.5em;
+}
+
+.messages .user {
+  border: 3px;
+  border-radius:0.5em;
+  padding: 0.5em;
+  margin: 0.5em 0em;
+  margin-left: 3em;
+  text-align: left;
+  background: var(--light);
+  color: var(--text);
+}
+
+.messages .assistant {
+  border: 3px;
+  border-radius:0.5em;
+  padding: 0.5em;
+  margin: 0.5em 0em;
+  margin-right: 3em;
+  text-align: left;
+  background: var(--dark);
+  color: var(--text);
+}
+
+.userBox {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.userBox .btn {
+  border-color: var(--dark);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 1rem;
+  margin-bottom: 0.3em;
+}
+
+.textBox {
+  border-radius: 0.5em;
+  padding: 0.45em 0.3em;
+  width: 80%;
+  max-width: 37.5em;
+  margin-right: 0.5em;
+  background: var(--bg);
+}
